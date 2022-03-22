@@ -32,8 +32,8 @@ for i in range(epoch):
     d_hiddenlayer = EH * hlayer_act*(1-hlayer_act)
 
 
-wout += np.dot(hlayer_act.T,d_output) *lr
-wh +=np.dot(X.T,d_hiddenlayer ) *lr
+    wout += np.dot(hlayer_act.T,d_output) *lr
+    wh +=np.dot(X.T,d_hiddenlayer ) *lr
 
 print("Input: \n" + str(X)) 
 print("Actual Output: \n" + str(y))
